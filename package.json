@@ -1,7 +1,7 @@
 {
   "name": "parcel-transformer-manifest-version",
   "version": "1.0.0",
-  "description": " Keeps the WebExtension manifest.json version and the package.json version in sync. ",
+  "description": "Sets the WebExtension `manifest.json` version at build time to the version in `package.json`",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
