@@ -2,14 +2,23 @@
   "name": "parcel-transformer-manifest-version",
   "version": "1.0.1",
   "description": "Sets the WebExtension `manifest.json` version at build time to the version in `package.json`",
+  "homepage": "https://github.com/Wadu436/parcel-transformer-manifest-version",
+  "repository": "git@github.com:Wadu436/parcel-transformer-manifest-version.git",
+  "author": "Warre Dujardin <warre.dujardin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wadu436/parcel-transformer-manifest-version/issues"
+  },
+  "keywords": [
+    "parcel",
+    "transformer",
+    "webextension"
+  ],
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
     "prepack": "rimraf --glob 'lib/*' && npx tsc"
   },
-  "repository": "git@github.com:Wadu436/parcel-transformer-manifest-version.git",
-  "author": "Warre <warre.dujardin@gmail.com>",
-  "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.5.1",
     "rimraf": "^5.0.1",
