@@ -1,0 +1,23 @@
+{
+  "name": "parcel-transformer-manifest-version",
+  "version": "0.1.0",
+  "description": " Keeps the WebExtension manifest.json version and the package.json version in sync. ",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "prepack": "rimraf --glob 'lib/*' && npx tsc"
+  },
+  "repository": "git@github.com:Wadu436/parcel-transformer-manifest-version.git",
+  "author": "Warre <warre.dujardin@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.5.1",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6"
+  },
+  "type": "module",
+  "dependencies": {
+    "@parcel/core": "^2.9.3",
+    "@parcel/plugin": "^2.9.3"
+  }
+}

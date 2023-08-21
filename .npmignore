@@ -1,5 +1,5 @@
-.vscode/
-lib/
+.vscode
+tsconfig.json
 
 # Dependency directories
 node_modules/
