@@ -1,6 +1,6 @@
 {
   "name": "parcel-transformer-manifest-version",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sets the WebExtension `manifest.json` version at build time to the version in `package.json`",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
