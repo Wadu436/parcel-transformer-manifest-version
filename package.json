@@ -1,6 +1,6 @@
 {
   "name": "parcel-transformer-manifest-version",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Sets the WebExtension `manifest.json` version at build time to the version in `package.json`",
   "homepage": "https://github.com/Wadu436/parcel-transformer-manifest-version",
   "repository": "git@github.com:Wadu436/parcel-transformer-manifest-version.git",

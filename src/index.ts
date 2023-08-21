@@ -27,7 +27,8 @@ export default new Transformer({
       return [asset];
     }
 
-    parsed.version = config.version;
+    // Supports yarn's prerelease numbering (e.g. 3.2.1-4)
+    parsed.version = config.version.split('-')[0];
     asset.setCode(JSON.stringify(parsed));
     return [asset];
   },
