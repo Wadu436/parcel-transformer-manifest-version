@@ -1,6 +1,6 @@
 # parcel-transformer-manifest-version
 
-Keeps the WebExtension manifest.json version and the package.json version in sync.
+Sets the WebExtension `manifest.json` version at build time to the version in `package.json`
 
 ## Installation
 
