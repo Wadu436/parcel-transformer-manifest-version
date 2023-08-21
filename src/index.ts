@@ -15,12 +15,20 @@ export default new Transformer({
     return contents;
   },
   async transform({ asset, config }) {
-    let source = await asset.getCode();
+    let filePath = await asset.filePath;
+    if (!filePath.endsWith("manifest.json")) {
+      return [asset];
+    }
 
+    let source = await asset.getCode();
     const parsed = JSON.parse(source);
+
+    if (parsed.manifest_version == undefined) {
+      return [asset];
+    }
+
     parsed.version = config.version;
     asset.setCode(JSON.stringify(parsed));
-
     return [asset];
   },
 });
